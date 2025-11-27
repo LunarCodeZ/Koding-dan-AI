@@ -1,6 +1,6 @@
 '''
 Tipe Data Boolean
-simpan dengan nama boolean.py
+simpan dengan nama file boolean.py
 '''
 
 narkoba = False # --> Variabel narkoba diisi dengan boolean salah atau 'False'

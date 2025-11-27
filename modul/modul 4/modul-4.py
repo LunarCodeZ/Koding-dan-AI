@@ -151,4 +151,5 @@ print(f"Luas Trapesium: {luas_trapesium} cm")
 # >> Penyelesaian Program 3 <<
 # Program Operator Bitwise
 print("\n\n\nProgram 3: Program Operator Bitwise")
+
 # Output:

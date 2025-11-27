@@ -1,6 +1,6 @@
 '''
 String Format
-simpan dengan nama string_format.py
+simpan dengan nama file string_format.py
 '''
 
 # Mengisi variabel dengan tipe data String

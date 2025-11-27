@@ -45,7 +45,7 @@ umur = 16
 hobi = "Coding dan bermain game"
 
 # Output:
-print(f"Nama saya ialah {nama} yang beralamat di {alamat}. Umur saya sekarang ialah {umur} tahun, serta memiliki hobi yaitu {hobi}")
+print(f"Halo, nama saya ialah {nama} yang beralamat di {alamat}. Umur saya sekarang ialah {umur} tahun, serta memiliki hobi yaitu {hobi}")
 
 
 

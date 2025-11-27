@@ -6,7 +6,7 @@
 print("=== Penjelasan Print() ===")
 
 """
-print() ialah syntax pada bahasa pemrograman Python yang dapat digunakan
+print() ialah syntax atau perintah pada bahasa pemrograman Python yang dapat digunakan
 untuk menampilkan teks atau nilai pada suatu variabel.
 """
 
