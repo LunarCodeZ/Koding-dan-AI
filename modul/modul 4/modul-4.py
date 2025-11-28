@@ -39,7 +39,7 @@ luas_pp = panjang_pp * lebar_pp
 # 3. Luas Segitiga
 alas_segitiga = 40
 tinggi_segitiga = 60
-luas_segitiga = 0.5*alas_segitiga*tinggi_segitiga
+luas_segitiga = 0.5 * alas_segitiga * tinggi_segitiga
 # Lanjutkan untuk luas lingkaran, luas jajaran genjang dan trapesium
 
 tampilkan output, berupa nilai variabel nya masing - masing
@@ -48,9 +48,15 @@ tampilkan output, berupa nilai variabel nya masing - masing
 ----------------------------------------------------------------------
 # program 3, buatlah program nya dengan output seperti pada gambar
 # di bawah, gunakan operator bitwise, dengan menentukan berapakah nilai
-# variabel a, b dengan nilai output seperti pada gambar
+# variabel a, b dengan nilai output seperti pada gambar:
+
+a & b = 0
+a | b = 13
+-a = -10
+a ^ b = 13
 ----------------------------------------------------------------------
 '''
+
 
 
 # >> Penyelesaian Program 1 <<
@@ -103,7 +109,6 @@ tinggi_trapesium = 10
 luas_trapesium = 0.5 * (sisi_sejajar_1_trapesium + sisi_sejajar_2_trapesium) * tinggi_trapesium
 
 
-
 # Output:
 print("Luas Bangun Datar Persegi:")
 print(f"Sisi Persegi: {panjang_sisi} cm")
@@ -151,5 +156,14 @@ print(f"Luas Trapesium: {luas_trapesium} cm")
 # >> Penyelesaian Program 3 <<
 # Program Operator Bitwise
 print("\n\n\nProgram 3: Program Operator Bitwise")
+a = 9
+b = 4
+
 
 # Output:
+print(f"a = {a}")
+print(f"b = {b}\n")
+print(f"a & b = {a & b}")
+print(f"a | b = {a | b}")
+print(f"~a = {~a}")
+print(f"a ^ b = {a ^ b}")
