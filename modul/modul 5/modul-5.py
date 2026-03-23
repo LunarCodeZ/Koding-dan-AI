@@ -15,13 +15,17 @@ a. Program 1 - Mengecek apakah segitiga tersebut merupakan:
    > Segitiga sama sisi
    > Segitiga sama kaki
    > Segitiga sembarang
+
+(2) Cek tahun kabisat
+(3) Zodiak / astrologi yunani
+(4) Zodiak / astrologi cina
 '''
 
 
 
 # >> Penyelesaian Program 1 <<
 # Cek Segitiga
-print("Program 1: Cek Segitiga")
+print("- Program 1: Cek Segitiga -")
 x = 10
 y = 10
 z = 10
@@ -44,7 +48,7 @@ else:
 
 # >> Penyelesaian Program 2 <<
 # Cek Tahun Kabisat
-print("\n\n\nProgram 2: Cek Tahun Kabisat")
+print("\n\n- Program 2: Cek Tahun Kabisat -")
 tahun = 2002
 
 print(f"Tahun: {tahun}")
@@ -58,7 +62,7 @@ else:
 
 # >> Penyelesaian Program 3 <<
 # Zodiak / Astrologi Yunani
-print("\n\n\nProgram 3: Zodiak / Astrologi Yunani")
+print("\n\n- Program 3: Zodiak / Astrologi Yunani -")
 tanggal = 22
 bulan = "Juni"
 daftar_bulan = [
@@ -195,7 +199,7 @@ if ((bulan in daftar_bulan)):
 
 # >> Penyelesaian Program 4 <<
 # Zodiak / Astrologi Cina
-print("\n\n\nProgram 4: Zodiak / Astrologi Cina")
+print("\n\n- Program 4: Zodiak / Astrologi Cina -")
 daftar_astrologi_cina = {
     'Ayam Jantan': 1981,
     'Anjing': 1982,
