@@ -36,7 +36,7 @@ print(f"Karakter indeks ke-10: {kalimat[10]}") # --> Menampilkan karakter ke 11 
 
 # >> Penyelesaian Program 2 <<
 # String range
-print("\n\n\nProgram 2: String range")
+print("\n\nProgram 2: String range")
 kalimat_range = "Halo semuanya"
 
 print(f"Kalimat: {kalimat_range}")
@@ -48,57 +48,47 @@ print(f"Karakter dari indeks 7-11: {kalimat_range[7:11]}")
 
 # >> Penyelesaian Program 3 <<
 # Mengubah kalimat menjadi lowercase dan uppercase
-print("\n\n\nProgram 3: Mengubah kalimat menjadi lowercase dan lowercase")
+print("\n\nProgram 3: Mengubah kalimat menjadi lowercase dan lowercase")
+daftar_huruf = "abcdefghijklmnopqrstuvwxyz"
+daftar_huruf_upper = daftar_huruf.upper()
+
 kalimat_asli = "Halo Semuanya, aku AGUS"
+kalimat_asli2 = "orang jahat adalah orang baik yang tersakiti"
+hasil_perubahan = ""
 
 print(f"Kalimat: {kalimat_asli}")
 print(f"Kalimat lowercase: {kalimat_asli.lower()}")
 print(f"Kalimat uppercase: {kalimat_asli.upper()}")
+for huruf in kalimat_asli2:
+    if (huruf == 'a' or huruf == 'o' or huruf == 'e'):
+        hasil_perubahan += "i"
+    else:
+        hasil_perubahan += huruf
+print(f"Kalimat asli: {kalimat_asli2}")
+print(f"Setelah a, o, dan e diubah menjadi i: {hasil_perubahan}")
 
 
 
 # >> Penyelesaian Program 4 <<
 # Enkripsi caesar cipher
-print("\n\n\nProgram 4: Enkripsi caesar cipher")
-daftar_huruf = "abcdefghijklmnopqrstuvwxyz"
-daftar_huruf_upper = daftar_huruf.upper()
-kumpulan_huruf = []
-kumpulan_kata = []
+print("\n\n- Program 4: Enkripsi caesar cipher -")
 
-string_original = "sidoarjo kota yang maju"
-langkah = 2
-encrypt_counter = 1
+string_original = str(input("Masukkan string: "))
+langkah = int(input("Masukkan berapa langkah: "))
+langkah %= 26
 
-print(f"Kalimat Original: {string_original}")
-print(len(string_original))
+print(f"Kalimat original: {string_original}")
+print(f"Langkah: {langkah}")
 
-# for huruf in string_original:
-#     if (huruf == " "):
-#         kumpulan_kata.append(''.join(kumpulan_huruf))
-#         kumpulan_huruf = []
-#     elif (huruf == string_original[-1]):
-#         kumpulan_huruf.append(huruf)
-#         kumpulan_kata.append(''.join(kumpulan_huruf))
-#         kumpulan_huruf = []
-#         print(' '.join(kumpulan_kata))
-#     else:
-#         kumpulan_huruf.append(huruf)
-
+hasil_enkripsi = ""
 for huruf in string_original:
-    huruf_counter = 0
-
-    if (huruf == " "):
-        kumpulan_kata.append(''.join(kumpulan_huruf))
-        print(kumpulan_kata)
-        kumpulan_huruf = []
-        continue
-        
+    if (huruf != " "):
+        if (daftar_huruf.index(huruf) + langkah > 25):
+            hasil_enkripsi += daftar_huruf[(daftar_huruf.index(huruf) + langkah) % 26]
+        else:
+            hasil_enkripsi += daftar_huruf[daftar_huruf.index(huruf) + 2]
     else:
-        while (huruf_counter < len(daftar_huruf)):
-            if (daftar_huruf[huruf_counter] == huruf):
-                kumpulan_huruf.append(daftar_huruf[huruf_counter + langkah])
-                break
-            else:
-                huruf_counter+=1
+        hasil_enkripsi += " "   
     
-    encrypt_counter+=1
+
+print(hasil_enkripsi)
