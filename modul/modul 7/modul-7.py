@@ -90,5 +90,4 @@ for huruf in string_original:
     else:
         hasil_enkripsi += " "   
     
-
 print(f"Hasil enkripsi: {hasil_enkripsi}")
