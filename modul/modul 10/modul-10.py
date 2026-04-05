@@ -26,8 +26,7 @@ Buatlah:
 # Program yang menampilkan nilai faktorial
 # dari angka yang di input
 print("- Program 1: Nilai faktorial angka masukan -")
-# angka = int(input("Masukkan angka yang akan difaktorialkan: "))
-angka = 3
+angka = int(input("Masukkan angka yang akan difaktorialkan: "))
 list_faktor = []
 
 def faktorial(nilai_faktor):
