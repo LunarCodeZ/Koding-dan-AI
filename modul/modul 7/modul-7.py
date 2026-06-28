@@ -52,7 +52,7 @@ print("\n\nProgram 3: Mengubah kalimat menjadi lowercase dan lowercase")
 daftar_huruf = "abcdefghijklmnopqrstuvwxyz"
 daftar_huruf_upper = daftar_huruf.upper()
 
-kalimat_asli = "Halo Semuanya, aku AGUS"
+kalimat_asli = "Halo semuanya, aku LunarCodeZ"
 kalimat_asli2 = "orang jahat adalah orang baik yang tersakiti"
 hasil_perubahan = ""
 
@@ -86,9 +86,9 @@ for huruf in string_original:
         if (daftar_huruf.index(huruf) + langkah > 25):
             hasil_enkripsi += daftar_huruf[(daftar_huruf.index(huruf) + langkah) % 26]
         else:
-            hasil_enkripsi += daftar_huruf[daftar_huruf.index(huruf) + 2]
+            hasil_enkripsi += daftar_huruf[daftar_huruf.index(huruf) + langkah]
     else:
         hasil_enkripsi += " "   
     
 
-print(hasil_enkripsi)
+print(f"Hasil enkripsi: {hasil_enkripsi}")
